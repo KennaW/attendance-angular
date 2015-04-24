@@ -1,0 +1,14 @@
+<h1>YOU DID IT!</h1>
+
+<div class="container" ng-controller="attendanceSheet">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Student List</h2>
+        <ul>
+          <li ng-repeat="item in students">
+            <h3>{{item.name}} {{ item.here }}</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
