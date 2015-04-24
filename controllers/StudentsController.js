@@ -8,7 +8,9 @@
 //   ]
 // });
 
-attendanceSheet.controller('StudentsCtrl', function StudentsCtrl($scope, attendanceSheet) {
+attendanceSheet.controller('StudentsCtrl', function StudentsCtrl($scope, attendanceFactory) {
   $scope.students = attendanceFactory.students;
-  $scope.attendanceFactory = attendanceFactory;
+  $scope.addStudentHere = function(student) {
+    student.here = true;
+  }
 });
